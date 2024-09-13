@@ -1,0 +1,4 @@
+-> Individual class for each functionality
+-> Use while(!Thread.currentThread.isInterrupted) instead of while(true)
+-> Make separate class for monitorThread
+-> Start InvoiceProcess when first thread 
