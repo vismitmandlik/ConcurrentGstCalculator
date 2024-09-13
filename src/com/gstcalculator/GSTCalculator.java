@@ -21,7 +21,7 @@ public class GSTCalculator {
         // Thread that monitors the queue and processes invoices
         Thread monitorThread = new Thread(() -> {
             try {
-                while (true) {
+                while (!Thread.currentThread().isInterrupted()) {
                     Invoice invoice = invoiceQueue.take();  
                     
                     executorService.submit(new InvoiceProcessor(invoice));  
