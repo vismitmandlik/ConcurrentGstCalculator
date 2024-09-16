@@ -23,7 +23,6 @@ public class GSTCalculator {
                 monitorThread = new Thread(new InvoiceMonitor(input.invoiceQueue, executorService));
                 monitorThread.start();
             }
-
             
             Thread.sleep(2000);
         }
