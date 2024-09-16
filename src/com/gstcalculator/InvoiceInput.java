@@ -4,7 +4,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 
 public class InvoiceInput {
-    BlockingQueue<Invoice> invoiceQueue = new LinkedBlockingQueue<>();
+    BlockingQueue<Invoice> invoiceQueue;
 
     // Constructor initializes the queue
     public InvoiceInput() {

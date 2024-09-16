@@ -12,7 +12,7 @@ public class GSTCalculator {
 
         
         int numProcessors = Runtime.getRuntime().availableProcessors();
-        ExecutorService executorService = Executors.newFixedThreadPool(numProcessors);
+        ExecutorService executorService = Executors.newFixedThreadPool(numProcessors*2);
 
         Thread monitorThread = new Thread(new InvoiceMonitor(input.invoiceQueue, executorService));
         monitorThread.start();
